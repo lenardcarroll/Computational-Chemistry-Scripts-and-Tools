@@ -21,6 +21,19 @@ To convert a fractional POSCAR file to the .xyz format use:
 ```
 python FractionalPOSCARToXYZ.py -inp POSCAR -out POSCAR.xyz
 ```
+N.B. The CONTCAR or POSCAR format needs to be:
+```
+COMMENT                                  
+   SCALING FACTOR     
+    CELL VECTOR A
+    CELL VECTOR B
+    DELL VECTOR C
+   ATOM TYPES
+   ATOM NUMBERS
+Selective dynamics
+Direct
+  COORDINATES
+```
 
 To convert a cartesian POSCAR file to the .xyz format use:
 ```
